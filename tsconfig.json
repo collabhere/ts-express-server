@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"outDir": "build",
+		"lib": [
+			"esnext"
+		],
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"module": "commonjs",
+		"sourceMap": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+	},
+	"include": [
+		"src/**/*.ts",
+		"global.d.ts",
+		"thirdparty.d.ts"
+	],
+	"exclude": [
+		"node_modules/**/*"
+	]
+}

@@ -1,0 +1,57 @@
+  
+{
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": [],
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "globals": {
+        "Reflect": true,
+        "Promise": true,
+        "RegEx": true,
+        "AbortController": true,
+        "BUILD_NUMBER": true
+    },
+    "rules": {
+        "keyword-spacing": [0],
+        "new-cap": [0],
+        "max-depth": ["error", 5],
+        "max-params": ["error", 6],
+        "max-len": ["warn", 100],
+        "array-callback-return": [2],
+        "no-mixed-operators": [2],
+        "eqeqeq": [2],
+        "no-unused-vars": [1], // Need to change it to error after informing team
+        "no-trailing-spaces": [
+            "error",
+            {
+                "ignoreComments": true,
+                "skipBlankLines": true
+            }
+        ],
+        "@typescript-eslint/no-empty-function": ["off"],
+        "@typescript-eslint/ban-types": ["warn"],
+        "semi": "error",
+        "key-spacing": "error",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "object-curly-spacing": ["error", "always"],
+        "space-in-parens": ["error", "never"],
+        "space-infix-ops": "error",
+        "space-unary-ops": "error",
+        "computed-property-spacing": ["error", "never"],
+        "arrow-spacing": "error",
+        "no-debugger": "warn"
+    },
+    "ignorePatterns": [
+        "node_modules",
+        "build",
+        "config",
+        "scripts",
+        "src/**/*.test.ts*",
+        "src/thirdparty.ts",
+        "src/**/*.d.ts"
+    ]
+}
